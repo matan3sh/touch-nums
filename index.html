@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Touch the Numbers - Coding Academy</title>
+</head>
+
+<body>
+    <h1 class="title">Touch the Numbers</h1>
+
+    <div class="info">
+        <div class="title-time">
+            Game Time
+            <div class="time">
+            </div>
+        </div>
+        <div class="title-next">
+            Next Number
+            <div class="next">
+            </div>
+        </div>
+    </div>
+
+
+    <table class="container" border="1" cellpadding="10">
+        <tbody class="board"></tbody>
+    </table>
+
+    <p>Choose Level</p>
+    <div class="level">
+        <input type="checkbox" id="4X4" name="4X4" value="4X4" onclick="init(16)">
+        <label for="male">4X4</label><br>
+        <input type="checkbox" id="5X5" name="5X5" value="5X5" onclick="init(25)">
+        <label for="female">5X5</label><br>
+        <input type="checkbox" id="6X6" name="6X6" value="6X6" onclick="init(36)">
+        <label for="other">6X6</label>
+    </div>
+
+    <div class="modal">
+        <h3></h3>
+        <h2></h2>
+        <button onclick="closeModal()">Try Again</button>
+    </div>
+
+    <script src="js/util.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
